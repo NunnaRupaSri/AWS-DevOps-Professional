@@ -11,7 +11,7 @@ phases:
       commands:
         - cd cicd-codepipeline
         - echo Build started `date`
-        - cp index.html /var/www/html/
+        - cp cicd-codepipeline/index.html /var/www/html/
   post_build:
       commands:
         -- cd cicd-codepipeline
@@ -20,4 +20,5 @@ phases:
 artifacts:
     files:
       - '**/*'
+
 
